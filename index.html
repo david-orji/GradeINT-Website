@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeINT - Redesigning Academic Assessment</title>
+    <meta name="description"
+        content="GradeINT is an offline-first computer-based testing system built for unreliable internet conditions. Experience reliable, AI-powered exams.">
+
+    <!-- Fonts: Helvetica/Futuristic Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fonts: Clean Thin (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-mark"></div>
+                Grade<span>INT</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#how-it-works">How it Works</a>
+                <a href="#ai-evaluation">AI Evaluation</a>
+                <a href="#trust">Security</a>
+                <a href="#contact" class="btn btn-outline-sm hover-lift">Signup for Pilot</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in-up">
+        <div class="hero-bg-gradient"></div>
+        <div class="container hero-container text-center">
+            <div class="hero-content">
+                <div class="badge fade-in-up delay-1">Institutional Grade Testing</div>
+                <h1 class="hero-headline fade-in-up delay-2">Reliable Offline-first
+                    Computer-based Testing</h1>
+                <p class="hero-subhead fade-in-up delay-3 mx-auto">Nigeria`s first software system that provides
+                    dependable offline assessment, with the ability to grade free-text responses. </p>
+                <div class="hero-actions fade-in-up delay-4 justify-center">
+                    <a href="https://gradeint.up.railway.app" target="_blank" class="btn btn-secondary hover-lift">View
+                        Exam Experience</a>
+                    <a href="#contact" class="btn btn-primary hover-lift">Signup for Pilot Participation</a>
+                </div>
+            </div>
+            <div class="hero-graphic fade-in-up delay-5 mx-auto mt-4" style="perspective: 1200px; width: 100%;">
+                <div class="glass-panel product-showcase mx-auto">
+                    <div class="panel-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                        <div class="browser-address">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <span>gradeint.up.railway.app</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-img-container" style="background: white;">
+                        <img src="dashboard.png" alt="GradeINT Educator Portal Dashboard" class="w-100 display-block"
+                            style="display: block;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Value Strip -->
+    <section class="value-strip slide-in-bottom">
+        <div class="container">
+            <div class="grid-3 text-center">
+                <div class="value-card hover-glow">
+                    <div class="icon-wrapper mx-auto mt-0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3>Offline-First Infrastructure</h3>
+                    <p>Designed from the ground up to handle power outages and internet unavailability scenarios
+                        seamlessly.</p>
+                </div>
+                <div class="value-card hover-glow">
+                    <div class="icon-wrapper mx-auto mt-0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>More than multiple-choice</h3>
+                    <p>Free-text response option provides students with the ability to explain their ideas and teachers
+                        proper assessment metric.</p>
+                </div>
+                <div class="value-card hover-glow">
+                    <div class="icon-wrapper mx-auto mt-0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Better staff-student relation</h3>
+                    <p>Freeing up the task of grading for teachers and enabling them spend more time imparting students
+                        with knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section bg-light text-center fade-in">
+        <div class="container">
+            <div class="problem-content mx-auto">
+                <div class="section-badge hover-pulse">The Challenge</div>
+                <h2 class="section-title">Connectivity shouldn't dictate testing quality.</h2>
+                <p class="section-desc centered mx-auto">Traditional computer-based testing systems expect flawless
+                    infrastructure. When the internet drops, systems freeze, student progress is lost, and institutional
+                    integrity is compromised. GradeINT completely eliminates this vulnerability by bringing the
+                    intelligence to the edge, guaranteeing that tests continue without interruption.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">A resilient exam flow.</h2>
+                <p class="section-desc centered mx-auto">Four simple steps to absolute reliability.</p>
+            </div>
+
+            <div class="steps-diagram horizontal-flow text-center">
+                <div class="step-item fade-in-up delay-1">
+                    <div class="step-number mx-auto">01</div>
+                    <div class="step-content">
+                        <h4>Configure & Download</h4>
+                        <p class="mx-auto" style="max-width: 400px;">Administrators create the exam and download the
+                            encrypted package to a local server or
+                            facilitator machine.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector fadeIn delay-2"></div>
+
+                <div class="step-item fade-in-up delay-2">
+                    <div class="step-number mx-auto">02</div>
+                    <div class="step-content">
+                        <h4>Local Distribution</h4>
+                        <p class="mx-auto" style="max-width: 400px;">The exam is distributed over a local network to
+                            candidate devices. No external internet is
+                            required.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector fadeIn delay-3"></div>
+
+                <div class="step-item fade-in-up delay-3">
+                    <div class="step-number mx-auto">03</div>
+                    <div class="step-content">
+                        <h4>Take the Exam</h4>
+                        <p class="mx-auto" style="max-width: 400px;">Candidates complete their test. Responses are
+                            encrypted and saved locally in real-time,
+                            preventing any data loss.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector fadeIn delay-4"></div>
+
+                <div class="step-item fade-in-up delay-4">
+                    <div class="step-number mx-auto">04</div>
+                    <div class="step-content">
+                        <h4>Sync & Grade</h4>
+                        <p class="mx-auto" style="max-width: 400px;">When connectivity is restored, results securely
+                            sync to the cloud for immediate AI grading
+                            and reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essays Section -->
+    <section id="ai-evaluation" class="essays-section">
+        <div class="container essays-container">
+            <div class="essays-text fade-in-right">
+                <div class="section-badge badge-accent hover-pulse mt-0">AI Evaluation engine</div>
+                <h2 class="section-title">Human-level reading. <br>Machine-level consistency.</h2>
+                <p class="section-desc">Don't limit assessments to multiple-choice out of logistical necessity.
+                    Scale
+                    your assessment capability with confidence.</p>
+                <ul class="feature-list" style="max-width: 500px; text-align: left;">
+                    <li class="hover-lift">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <strong>Standardized accuracy:</strong> Eliminates human fatigue and bias in mass grading
+                        scenarios.
+                    </li>
+                    <li class="hover-lift">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <strong>Deep analytical rubrics:</strong> Judges substance, argument structure, and grammar
+                        seamlessly.
+                    </li>
+                    <li class="hover-lift">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <strong>Instant turnaround:</strong> Turn weeks of manual grading into seconds.
+                    </li>
+                </ul>
+            </div>
+            <div class="essays-visual fade-in-left mx-auto">
+                <div class="glass-panel grading-panel hover-glow-large">
+                    <div class="essay-preview">
+                        <div class="line w-100"></div>
+                        <div class="line w-90"></div>
+                        <div class="line w-95 h-highlight"></div>
+                        <div class="line w-80"></div>
+                    </div>
+                    <div class="ai-analysis">
+                        <div class="score-circle">94<span>%</span></div>
+                        <div class="analysis-stats">
+                            <div class="stat"><span class="label">Cohesion</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat"><span class="label">Argument</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="stat"><span class="label">Grammar</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 98%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For & Trust Section -->
+    <section id="trust" class="trust-section bg-light fade-in">
+        <div class="container">
+            <div class="section-header text-center mx-auto">
+                <h2 class="section-title">Built for institutions that demand certainty.</h2>
+                <p class="section-desc centered mx-auto">Trusted by remote school districts, higher-ed institutions, and
+                    certification bodies operating in unpredictable infrastructural environments.</p>
+            </div>
+
+            <div class="grid-2 trust-grid mx-auto">
+                <div class="trust-card hover-glow">
+                    <div class="trust-icon float-animation">🔒</div>
+                    <h4>Government-Grade Security</h4>
+                    <p>AES-256 encryption at rest and in transit. Your exam contents and student responses are
+                        mathematically secured against unauthorized access, even if local hardware is compromised.</p>
+                </div>
+                <div class="trust-card hover-glow">
+                    <div class="trust-icon float-animation delay-1">✓</div>
+                    <h4>Compliance & Privacy First</h4>
+                    <p>Fully compliant with global educational privacy standards (FERPA, GDPR). We process data
+                        transparently and provide complete audit trailing for every administrative action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="glass-orb orb-1"></div>
+        <div class="glass-orb orb-2"></div>
+        <div class="glass-orb orb-3"></div>
+        <div class="container cta-container text-center">
+            <div class="cta-text fade-in-up">
+                <h2>Pilot GradeINT in your institution</h2>
+                <p class="mx-auto">We`re currently onboarding a limited number of institutions for pilot testing.
+<br>
+<br>
+Pilot institutions will run supervised exams using the GradeINT system, provide feedback on reliability and assessment quality and help shape final deployment standards.
+
+                </p>
+            </div>
+            <div class="cta-form-wrapper fade-in-up delay-2 mx-auto" style="max-width: 500px; width: 100%;">
+                <form class="lead-form" id="leadForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">Institution / Organization</label>
+                        <input type="text" id="institution" name="Institution" placeholder="University of..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" name="Email" placeholder="jane@institution.edu" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mt-2" id="submitBtn">Apply for Pilot Participation</button>
+                    <p class="form-footer">No credit card required for pilot access.</p>
+                    <div id="formMessage"
+                        style="display: none; margin-top: 1rem; font-size: 0.875rem; border-radius: 4px; padding: 0.75rem; text-align: center;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-bottom">
+        <div class="logo">
+            <div class="logo-mark"></div>
+            Grade<span>INT</span>
+        </div>
+    </div>
+    </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-icon">✓</div>
+        <div class="toast-body">
+            <h4 id="toast-title">Success</h4>
+            <p id="toast-message">Application submitted!</p>
+        </div>
+        <button class="toast-close" onclick="document.getElementById('toast').classList.remove('show')">×</button>
+    </div>
+
+    <!-- Animation Observers Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Apply animation classes based on the element's existing classes
+                        if (entry.target.classList.contains('fade-in-up')) {
+                            entry.target.style.animationPlayState = 'running';
+                        }
+                        if (entry.target.classList.contains('fade-in-left')) {
+                            entry.target.style.animationPlayState = 'running';
+                        }
+                        if (entry.target.classList.contains('fade-in-right')) {
+                            entry.target.style.animationPlayState = 'running';
+                        }
+                        if (entry.target.classList.contains('fade-in')) {
+                            entry.target.style.animationPlayState = 'running';
+                        }
+                        if (entry.target.classList.contains('slide-in-bottom')) {
+                            entry.target.style.animationPlayState = 'running';
+                        }
+                        if (entry.target.classList.contains('fadeIn')) {
+                            entry.target.style.animationPlayState = 'running';
+                        }
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Select all elements with animation classes and pause them initially
+            const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right, .fade-in, .slide-in-bottom, .fadeIn');
+
+            animatedElements.forEach(el => {
+                // Determine if element is already in viewport on load to prevent flash
+                const rect = el.getBoundingClientRect();
+                const inView = (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+
+                if (!inView) {
+                    el.style.animationPlayState = 'paused';
+                    observer.observe(el);
+                }
+            });
+
+            // Scroll-based 3D transform for the product showcase
+            const productShowcase = document.querySelector('.product-showcase');
+            if (productShowcase) {
+                window.addEventListener('scroll', () => {
+                    const scrollY = window.scrollY;
+                    const maxScroll = 500; // Stop animating after this many pixels
+
+                    if (scrollY < maxScroll) {
+                        // Calculate progress from 0 to 1
+                        const progress = scrollY / maxScroll;
+
+                        // Map progress to rotation (10deg to 0deg)
+                        const rotation = 10 - (progress * 10);
+
+                        // Map progress to scale (0.95 to 1.35)
+                        const scale = 0.95 + (progress * 0.2);
+
+                        productShowcase.style.transform = `rotateX(${rotation}deg) scale(${scale})`;
+                    } else {
+                        // Max out the effect
+                        productShowcase.style.transform = `rotateX(0deg) scale(1.05)`;
+                    }
+                }, { passive: true });
+            }
+
+            // Google Sheets Form Submission Logic
+            const form = document.getElementById('leadForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const toast = document.getElementById('toast');
+            const toastIcon = toast.querySelector('.toast-icon');
+            const toastTitle = document.getElementById('toast-title');
+            const toastMessage = document.getElementById('toast-message');
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx6JTtaA0UfCqfnuZaZ7VERS4KkVhT-75eWiPk4ndLFEfuTPchoR6fFFrT4KPiW6oIXZQ/exec';
+
+            function showToast(type, title, message) {
+                toastTitle.innerText = title;
+                toastMessage.innerText = message;
+
+                if (type === 'success') {
+                    toastIcon.innerText = '✓';
+                    toastIcon.style.backgroundColor = 'rgba(16, 185, 129, 0.2)';
+                    toastIcon.style.color = '#10b981';
+                } else {
+                    toastIcon.innerText = '!';
+                    toastIcon.style.backgroundColor = 'rgba(239, 68, 68, 0.2)';
+                    toastIcon.style.color = '#ef4444';
+                }
+
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 5000);
+            }
+
+            if (form) {
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    submitBtn.disabled = true;
+                    submitBtn.innerText = 'Submitting...';
+
+                    const formData = new FormData(form);
+
+                    fetch(scriptURL, { method: 'POST', body: formData })
+                        .then(response => {
+                            showToast('success', 'Application Submitted', 'Thank you! We will contact you shortly.');
+                            form.reset();
+                            submitBtn.disabled = false;
+                            submitBtn.innerText = 'Apply Now';
+                        })
+                        .catch(error => {
+                            console.error('Error!', error.message);
+                            showToast('error', 'Submission Failed', 'Please try again later.');
+                            submitBtn.disabled = false;
+                            submitBtn.innerText = 'Apply Now';
+                        });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
