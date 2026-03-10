@@ -32,8 +32,18 @@
     --grad-accent: linear-gradient(135deg, var(--clr-primary-royal) 0%, var(--clr-accent-aqua) 100%);
 
     /* Typography - Futuristic Type */
-    --font-sans: 'Space Grotesk', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-sans: 'Mona Sans', 'Space Grotesk', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+
+      .mona-sans-<uniquifier> {
+        font-family: "Mona Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+      }
+   
     /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
