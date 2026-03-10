@@ -260,12 +260,18 @@ svg {
     color: var(--clr-primary-royal);
 }
 
-.logo-mark {
+/*.logo-mark {
     width: 20px;
     height: 20px;
     background: var(--grad-accent);
     border-radius: 4px;
     margin-right: 8px;
+}*/
+
+.logo-mark {
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
