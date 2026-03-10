@@ -99,7 +99,7 @@ h5,
 h6 {
     line-height: 1.2;
     letter-spacing: -0.02em;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--clr-text-main);
 }
 
