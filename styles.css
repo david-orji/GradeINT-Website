@@ -247,7 +247,7 @@ svg {
     align-items: center;
 }
 
-.logo {
+/*.logo {
     display: flex;
     align-items: center;
     font-weight: 800;
@@ -255,7 +255,7 @@ svg {
     letter-spacing: -0.03em;
     color: var(--clr-text-main);
 }
-
+*/
 .logo span {
     color: var(--clr-primary-royal);
 }
