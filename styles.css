@@ -1480,4 +1480,22 @@ section {
     .social-icons {
         justify-content: center;
     }
+
+    /* Fix: blue rectangle artifact on mobile */
+    .hero-bg-gradient {
+        display: none;
+    }
+
+    .glass-panel {
+        /* backdrop-filter causes a solid blue artifact on iOS/mobile Chrome
+           when combined with a 3D-transformed parent — strip it on mobile */
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .product-showcase {
+        /* 3D perspective transform doesn't render cleanly on mobile */
+        transform: none;
+    }
 }
