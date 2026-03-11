@@ -35,15 +35,15 @@
     --font-sans: 'Mona Sans', 'Space Grotesk', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
-      .mona-sans-<uniquifier> {
+    .mona-sans {
         font-family: "Mona Sans", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 400;
+        font-weight: 500;
         font-style: normal;
         font-variation-settings:
-          "wdth" 100;
-      }
-   
+            "wdth" 100;
+    }
+
     /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -54,8 +54,10 @@
 
     /* Effects */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-    --shadow-lg: 0 10px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05),
+    0 2px 4px -2px rgb(0 0 0 / 0.05);
+    --shadow-lg: 0 10px 25px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.05);
     --shadow-glow: 0 0 30px rgba(0, 195, 217, 0.4);
     --shadow-glow-large: 0 0 60px rgba(0, 195, 217, 0.2);
     --border-radius-sm: 8px;
@@ -1043,6 +1045,57 @@ section {
     background: rgba(255, 255, 255, 0.12);
     border-color: var(--clr-accent-aqua);
     box-shadow: 0 0 0 3px rgba(0, 195, 217, 0.2);
+}
+
+.form-group select {
+    padding: 0.875rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: white;
+    outline: none;
+    transition: all 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+}
+
+.form-group select option {
+    background: #1e1b4b;
+    color: white;
+}
+
+.form-group select:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: var(--clr-accent-aqua);
+    box-shadow: 0 0 0 3px rgba(0, 195, 217, 0.2);
+}
+
+.form-group select.placeholder-selected {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* "Other" role free-text field — hidden by default, slides in when visible */
+.other-role-group {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    margin-top: -1.25rem; /* cancel the lead-form flex gap while collapsed */
+    transition: max-height 0.35s ease, opacity 0.3s ease, margin-top 0.35s ease;
+}
+
+.other-role-group.other-role-visible {
+    max-height: 120px;
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 0;
 }
 
 .form-footer {
